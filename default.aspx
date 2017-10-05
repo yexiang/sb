@@ -1,4 +1,4 @@
-<%@ Page language="c#" %>
+<%@ Page Language="C#" Debug="true" %>
 <%@ Import Namespace="System.Data" %>
 <%@ Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
