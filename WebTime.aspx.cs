@@ -28,7 +28,7 @@ public partial class WebTime : System.Web.UI.Page
         string sql = "SELECT name, number, address, phone FROM student";
         SqlDataAdapter cmd = new SqlDataAdapter(sql, conn);  
         DataTable dt = new DataTable();  
-        cmd.Fill(dt);  
+        //cmd.Fill(dt);  
         //dt.Rows.Count 
         
     } 
