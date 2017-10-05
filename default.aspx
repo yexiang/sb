@@ -1,4 +1,4 @@
-@{Layout="Layout.cshtml";}
+@{Layout="_Layout.cshtml";}
 
 <h1>Welcome to W3Schools</h1>
 
