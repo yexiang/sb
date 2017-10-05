@@ -68,22 +68,16 @@ Repeater1.DataBind();
 </HeaderTemplate>
 <SeparatorTemplate><hr /></SeparatorTemplate>
 <ItemTemplate><div class="row">
-<%# ((DataRowView)Container.DataItem)["FirstName"] %>
-<%# ((DataRowView)Container.DataItem)["LastName"] %><br>
+<%# ((DataRowView)Container.DataItem)["name"] %>
+<%# ((DataRowView)Container.DataItem)["number"] %><br>
 <%# ((DataRowView)Container.DataItem)["Address"] %><br>
-<%# ((DataRowView)Container.DataItem)["City"] %>,
-<%# ((DataRowView)Container.DataItem)["Region"] %>
-<%# ((DataRowView)Container.DataItem)["PostalCode"] %><br>
-<%# ((DataRowView)Container.DataItem)["HomePhone"] %>
+<%# ((DataRowView)Container.DataItem)["phone"] %>
 </div></ItemTemplate>
 <AlternatingItemTemplate><div class="alternate">
-<%# ((DataRowView)Container.DataItem)["FirstName"] %>
-<%# ((DataRowView)Container.DataItem)["LastName"] %><br>
+<%# ((DataRowView)Container.DataItem)["name"] %>
+<%# ((DataRowView)Container.DataItem)["number"] %><br>
 <%# ((DataRowView)Container.DataItem)["Address"] %><br>
-<%# ((DataRowView)Container.DataItem)["City"] %>,
-<%# ((DataRowView)Container.DataItem)["Region"] %>
-<%# ((DataRowView)Container.DataItem)["PostalCode"] %><br>
-<%# ((DataRowView)Container.DataItem)["HomePhone"] %>
+<%# ((DataRowView)Container.DataItem)["phone"] %>
 </div></AlternatingItemTemplate>
 <FooterTemplate><div class="footer">
 <%# ((DataView)Repeater1.DataSource).Count + " student found." %>
