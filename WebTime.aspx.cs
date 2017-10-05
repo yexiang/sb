@@ -25,8 +25,22 @@ public partial class WebTime : System.Web.UI.Page
      protected SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings["Conn"]);  
     protected void Page_Load(object sender, EventArgs e)  
     { 
-        string sql = "SELECT name, number, address, phone FROM student";
-        SqlDataAdapter cmd = new SqlDataAdapter(sql, conn);  
+    
+         string  sql = "CREATE TABLE student (id INTEGER CONSTRAINT PKeyId PRIMARY KEY, name CHAR(50), number CHAR(50), phone CHAR(50), address CHAR(255))" ; 
+         SqlDataAdapter cmd = new SqlCommand(sql, conn);
+try
+{
+cmd.ExecuteNonQuery(); 
+sql = "INSERT INTO student(name, number, address, phone) VALUES ('Puneet Nehra', 's16310', 'A 449 Sect 19, DELHI', '180888888888')" ;
+cmd = new SqlCommand(sql, conn);
+cmd.ExecuteNonQuery(); 
+}
+catch(SqlException ae)
+{
+//MessageBox.Show(ae.Message.ToString());
+}
+         sql = "SELECT name, number, address, phone FROM student";
+         cmd = new SqlDataAdapter(sql, conn);  
         DataTable dt = new DataTable();  
         cmd.Fill(dt);  
         //dt.Rows.Count 
