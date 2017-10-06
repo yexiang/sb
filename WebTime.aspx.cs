@@ -21,7 +21,7 @@ public partial class WebTime : System.Web.UI.Page
            DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second );
      } // end method Page_Init
      
-     public int count=0;
+     public string count;
      protected SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings["Conn"]);  
     protected void Page_Load(object sender, EventArgs e)  
     { 
@@ -38,7 +38,7 @@ cmd.ExecuteNonQuery();
 }
 catch(SqlException ae)
 {
-//MessageBox.Show(ae.Message.ToString());
+count = ae.Message.ToString();
 }
          sql = "SELECT name, number, address, phone FROM student";
         SqlDataAdapter da = new SqlDataAdapter(sql, conn);  
@@ -46,7 +46,7 @@ catch(SqlException ae)
         da.Fill(dt);  
          if (dt.Rows.Count > 0)  
         {  
-              count = dt.Rows.Count;
+              count = dt.Rows.Count.ToString();
         }
     } 
      
