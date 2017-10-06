@@ -32,7 +32,7 @@ public partial class WebTime : System.Web.UI.Page
 			SqlCommand cmd = new SqlCommand(sql, conn);
 			//cmd.ExecuteNonQuery();
 
-			sql = "CREATE TABLE student (id INTEGER IDENTITY (1, 1)  CONSTRAINT PKeyId PRIMARY KEY, name  NVARCHAR(50), number NVARCHAR(50), phone NVARCHAR(50), address NVARCHAR(255))" ;
+			sql = "CREATE TABLE student (id INTEGER IDENTITY (1, 1)  CONSTRAINT PKeyId PRIMARY KEY, name  NVARCHAR(150), number NVARCHAR(50), phone NVARCHAR(50), address NVARCHAR(255))" ;
 			cmd = new SqlCommand(sql, conn);
 			//cmd.ExecuteNonQuery();
 			
