@@ -35,8 +35,9 @@
           <input type="button" value="¹Ø¡¡±Õ" onclick="window.opener=null;window.close();" />
         </td>
         </tr>
-
       </table>
+      
+       <%= msg%>
     </div>
   </form>
 </body>

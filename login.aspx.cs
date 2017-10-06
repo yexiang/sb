@@ -17,6 +17,7 @@ public partial class login : System.Web.UI.Page
     {
 
     }
+    public string msg;
     protected void Button1_Click(object sender, EventArgs e)
     {
     try
