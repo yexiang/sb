@@ -43,7 +43,7 @@ catch(SqlException ae)
 {
 count = ae.Message.ToString();
 }
-         sql = "SELECT name, number, address, phone FROM student ORDER BY id desc";
+         sql = "SELECT name, number, address, phone FROM student ORDER BY id DESC";
          /*
         SqlDataAdapter da = new SqlDataAdapter(sql, conn);  
         DataTable dt = new DataTable();  
