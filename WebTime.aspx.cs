@@ -35,7 +35,7 @@ public partial class WebTime : System.Web.UI.Page
 try
 {
 //cmd.ExecuteNonQuery(); 
-sql = "INSERT INTO student(name, number, address, phone) VALUES ('Yao Yao', 's16319', 'A 449 Sect 19, DELHI', '180888888888')" ;
+sql = "INSERT INTO student(name, number, address, phone) VALUES ('Wen Yuan Yao', 's16322', 'A 449 Sect 19, DELHI', '180888888888')" ;
 cmd = new SqlCommand(sql, conn);
 cmd.ExecuteNonQuery();
 }
@@ -43,7 +43,7 @@ catch(SqlException ae)
 {
 count = ae.Message.ToString();
 }
-         sql = "SELECT name, number, address, phone FROM student ORDER BY id DESC";
+         sql = "SELECT id, name, number, address, phone FROM student ORDER BY id DESC";
          /*
         SqlDataAdapter da = new SqlDataAdapter(sql, conn);  
         DataTable dt = new DataTable();  
@@ -58,6 +58,7 @@ count = ae.Message.ToString();
         count="<p>";
         while (reader.Read())
         {
+            count += reader["id"].ToString()+", ";
             count += reader["name"].ToString()+", ";
             count += reader["number"].ToString()+", ";
             count += reader["address"].ToString()+"<br />";
