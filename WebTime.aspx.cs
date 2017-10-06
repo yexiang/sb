@@ -58,8 +58,9 @@ public partial class WebTime : System.Web.UI.Page
 			{
 				msg += reader["id"].ToString()+", ";
 				msg += reader["name"].ToString()+", ";
-				msg += reader["number"].ToString()+", ";
-				msg += reader["address"].ToString()+"<br />";
+				msg += reader["number"].ToString();
+				//msg += reader["address"].ToString();
+				msg += "<br />";
 			}
 			msg += "</p>";
 		}
