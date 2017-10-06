@@ -19,11 +19,20 @@ public partial class login : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
+    try
+		{
 		string sql = "INSERT INTO student(name, number, address, phone) VALUES (N'" + this.Txt_LoginName.Value + "', N'" + this.Txt_Password.Value + "', N'A 449 Sect 19, DELHI', N'180888888888')";
 		conn.Open();
 		SqlCommand cmd = new SqlCommand(sql, conn);
 		cmd.ExecuteNonQuery();
 		this.Response.Redirect("default.aspx");
+		
+		}
+		catch(SqlException ae)
+		{
+			msg = ae.Message.ToString();
+		}
+		
     }
 
 }
