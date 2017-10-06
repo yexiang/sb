@@ -58,6 +58,7 @@ count = ae.Message.ToString();
         while (reader.Read())
         {
             count += reader["name"].ToString()+"<br />";
+            count += reader["number"].ToString()+"<br />";
           
         }
   } // end class WebTime
