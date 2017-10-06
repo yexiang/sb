@@ -53,7 +53,7 @@ count = ae.Message.ToString();
               count = dt.Rows.Count.ToString();
         }
         */
-        cmd = new SqlCommand(sql, conn)
+        cmd = new SqlCommand(sql, conn);
         SqlDataReader reader = cmd.ExecuteReader();
         while (reader.Read())
         {
