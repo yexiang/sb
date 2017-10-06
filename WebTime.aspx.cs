@@ -30,14 +30,13 @@ public partial class WebTime : System.Web.UI.Page
 			conn.Open();
 			string sql = "DROP TABLE student";
 			SqlCommand cmd = new SqlCommand(sql, conn);
-			cmd.ExecuteNonQuery();
+			//cmd.ExecuteNonQuery();
 
 			sql = "CREATE TABLE student (id INTEGER IDENTITY (1, 1)  CONSTRAINT PKeyId PRIMARY KEY, name  NVARCHAR(50), number NVARCHAR(50), phone NVARCHAR(50), address NVARCHAR(255))" ;
 			cmd = new SqlCommand(sql, conn);
-			cmd.ExecuteNonQuery();
-
+			//cmd.ExecuteNonQuery();
+			
 			/*
-
 			sql = "INSERT INTO student(name, number, address, phone) VALUES ('Wen Yuan Yao', 's16322', 'A 449 Sect 19, DELHI', '180888888888')" ;
 			cmd = new SqlCommand(sql, conn);
 			cmd.ExecuteNonQuery();
@@ -61,7 +60,6 @@ public partial class WebTime : System.Web.UI.Page
 				msg += reader["name"].ToString()+", ";
 				msg += reader["number"].ToString()+", ";
 				msg += reader["address"].ToString()+"<br />";
-
 			}
 			msg += "</p>";
 		}
