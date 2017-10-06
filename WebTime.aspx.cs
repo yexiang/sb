@@ -21,7 +21,7 @@ public partial class WebTime : System.Web.UI.Page
            DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second );
      } // end method Page_Init
      
-     public string count=0;
+     public int count=0;
      protected SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings["Conn"]);  
     protected void Page_Load(object sender, EventArgs e)  
     { 
