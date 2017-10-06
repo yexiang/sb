@@ -19,6 +19,8 @@
  <asp:Label ID="timeLabel" runat="server" BackColor="Black" Font-Size="XX-Large" ForeColor="Yellow" EnableViewState="False"></asp:Label>
   </p>
    </div>
+   
+   <%= count%>
 </form>
  </body>
  </html>
