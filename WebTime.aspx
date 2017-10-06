@@ -1,6 +1,6 @@
 <%-- Fig. 21.4: WebTime.aspx --%>
 <%-- A page that displays the current time in a Label. --%>
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="WebTime.aspx.cs"
+<%@ Page Language="C#" codePage="65001" AutoEventWireup="true" CodeFile="WebTime.aspx.cs"
 Inherits="WebTime" EnableSessionState="False" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
