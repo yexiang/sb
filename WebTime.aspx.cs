@@ -55,11 +55,13 @@ count = ae.Message.ToString();
         */
         cmd = new SqlCommand(sql, conn);
         SqlDataReader reader = cmd.ExecuteReader();
+        count="<pre>";
         while (reader.Read())
         {
-            count += reader["name"].ToString()+"<br />";
+            count += reader["name"].ToString()+"\\t";
             count += reader["number"].ToString()+"<br />";
           
         }
+        count += "</pre>";
   } // end class WebTime
 }
