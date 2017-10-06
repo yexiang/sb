@@ -4,12 +4,14 @@
 <head runat="server">
 <meta charset="utf-8" />
 <title>系统</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <form id="form1" runat="server">
     <div valign="middle">
 
-      <table valign="center" align="center" border="1" cellpadding="5" cellspacing="3" bordercolorlight="#003366" bordercolordark="#ffffff">
+      <table valign="center" align="center" border="1" cellpadding="8" cellspacing="1" bordercolorlight="#003366" bordercolordark="#ffffff">
 
         <tr id="addData_TR" class="STYLE1" >
 
