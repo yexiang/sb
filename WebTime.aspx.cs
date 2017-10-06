@@ -28,7 +28,7 @@ public partial class WebTime : System.Web.UI.Page
     conn.Open();
     string sql = "DROP TABLE student";
     SqlCommand cmd = new SqlCommand(sql, conn);
-    cmd.ExecuteQuery();
+    cmd.ExecuteNonQuery();
     
          sql = "CREATE TABLE student (id INTEGER IDENTITY (1, 1)  CONSTRAINT PKeyId PRIMARY KEY, name CHAR(50), number CHAR(50), phone CHAR(50), address CHAR(255))" ; 
          cmd = new SqlCommand(sql, conn);
