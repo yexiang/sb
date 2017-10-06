@@ -27,7 +27,7 @@ public partial class WebTime : System.Web.UI.Page
     { 
     
          string  sql = "CREATE TABLE student (id INTEGER CONSTRAINT PKeyId PRIMARY KEY, name CHAR(50), number CHAR(50), phone CHAR(50), address CHAR(255))" ; 
-         SqlDataAdapter cmd = new SqlCommand(sql, conn);
+         SqlCommand cmd = new SqlCommand(sql, conn);
 try
 {
 cmd.ExecuteNonQuery(); 
@@ -40,9 +40,9 @@ catch(SqlException ae)
 //MessageBox.Show(ae.Message.ToString());
 }
          sql = "SELECT name, number, address, phone FROM student";
-         cmd = new SqlDataAdapter(sql, conn);  
+        SqlDataAdapter cmd2 = new SqlDataAdapter(sql, conn);  
         DataTable dt = new DataTable();  
-        cmd.Fill(dt);  
+        cmd2.Fill(dt);  
         //dt.Rows.Count 
         
     } 
