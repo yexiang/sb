@@ -21,7 +21,7 @@ public partial class WebTime : System.Web.UI.Page
            DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second );
      } // end method Page_Init
      
-     
+     public int count=0;
      protected SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings["Conn"]);  
     protected void Page_Load(object sender, EventArgs e)  
     { 
@@ -31,10 +31,10 @@ public partial class WebTime : System.Web.UI.Page
 try
 {
 conn.Open();
-cmd.ExecuteNonQuery(); 
+//cmd.ExecuteNonQuery(); 
 sql = "INSERT INTO student(name, number, address, phone) VALUES ('Puneet Nehra', 's16310', 'A 449 Sect 19, DELHI', '180888888888')" ;
 cmd = new SqlCommand(sql, conn);
-cmd.ExecuteNonQuery(); 
+cmd.ExecuteNonQuery();
 }
 catch(SqlException ae)
 {
@@ -46,7 +46,7 @@ catch(SqlException ae)
         da.Fill(dt);  
          if (dt.Rows.Count > 0)  
         {  
-             int count = dt.Rows.Count;
+              count = dt.Rows.Count;
         }
     } 
      
