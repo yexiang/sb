@@ -30,6 +30,7 @@ public partial class WebTime : System.Web.UI.Page
          SqlCommand cmd = new SqlCommand(sql, conn);
 try
 {
+conn.Open();
 cmd.ExecuteNonQuery(); 
 sql = "INSERT INTO student(name, number, address, phone) VALUES ('Puneet Nehra', 's16310', 'A 449 Sect 19, DELHI', '180888888888')" ;
 cmd = new SqlCommand(sql, conn);
