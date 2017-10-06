@@ -6,7 +6,7 @@ Inherits="WebTime" EnableSessionState="False" %>
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta charset="utf-8" />
+<meta charset="gbk" />
 <title>A Simple Web Form Example</title>
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1">

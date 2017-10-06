@@ -2,8 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-<meta charset="utf-8" />
-<title>Áî®Êà∑ÁôªÂΩï</title>
+<meta charset="gbk" />
+<title>”√ªßµ«¬º</title>
 </head>
 <body>
   <form id="form1" runat="server">
@@ -13,26 +13,26 @@
 
         <tr id="addData_TR" class="STYLE1" >
 
-          <td colspan="2" align="center">Á≥ªÁªü</td>
+          <td colspan="2" align="center">œµÕ≥</td>
         </tr>
 
         <tr class="STYLE1">
-          <td>Áî®Êà∑Âêç:</td>
+          <td>”√ªß√˚:</td>
           <td><input name="userName" type="text" id="Txt_LoginName" runat="server"/>
           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Txt_LoginName"
-          ErrorMessage="ËØ∑ËæìÂÖ•Áî®Êà∑ÂêçÔºÅ">*</asp:RequiredFieldValidator></td>
+          ErrorMessage="«Î ‰»Î”√ªß√˚£°">*</asp:RequiredFieldValidator></td>
         </tr>
         <tr class="STYLE1">
-          <td>ÂØÜ    Á†Å:</td>
+          <td>√‹    ¬Î:</td>
           <td><input name="psw" type="text" id="Txt_Password" runat="server" style="width: 149px"/>
           <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Txt_Password"
-          ErrorMessage="ËØ∑ËæìÂÖ•ÂØÜÁ†ÅÔºÅ">*</asp:RequiredFieldValidator></td>
+          ErrorMessage="«Î ‰»Î√‹¬Î£°">*</asp:RequiredFieldValidator></td>
         </tr>
         <tr>
           <td colspan="2" align="center" style="height: 26px">
-          <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Áôª„ÄÄÂΩï" />
+          <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="µ«°°¬º" />
 
-          <input type="button" value="ÂÖ≥„ÄÄÈó≠" onclick="window.opener=null;window.close();" />
+          <input type="button" value="πÿ°°±’" onclick="window.opener=null;window.close();" />
         </td>
         </tr>
 
