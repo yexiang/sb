@@ -26,7 +26,7 @@ public partial class WebTime : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)  
     { 
     
-         string  sql = "CREATE TABLE student (id INTEGER CONSTRAINT PKeyId PRIMARY KEY, name CHAR(50), number CHAR(50), phone CHAR(50), address CHAR(255))" ; 
+         string  sql = "CREATE TABLE student (id INTEGER IDENTITY (1, 1)  CONSTRAINT PKeyId PRIMARY KEY, name CHAR(50), number CHAR(50), phone CHAR(50), address CHAR(255))" ; 
          SqlCommand cmd = new SqlCommand(sql, conn);
 try
 {
