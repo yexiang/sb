@@ -9,7 +9,7 @@
   <form id="form1" runat="server">
     <div valign="middle">
 
-      <table valign="center" align="center" border="1" cellpadding="0" cellspacing="2" bordercolorlight="#003366" bordercolordark="#ffffff">
+      <table valign="center" align="center" border="1" cellpadding="5" cellspacing="3" bordercolorlight="#003366" bordercolordark="#ffffff">
 
         <tr id="addData_TR" class="STYLE1" >
 
