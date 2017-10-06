@@ -44,6 +44,7 @@ catch(SqlException ae)
 count = ae.Message.ToString();
 }
          sql = "SELECT name, number, address, phone FROM student";
+         /*
         SqlDataAdapter da = new SqlDataAdapter(sql, conn);  
         DataTable dt = new DataTable();  
         da.Fill(dt);  
@@ -51,6 +52,13 @@ count = ae.Message.ToString();
         {  
               count = dt.Rows.Count.ToString();
         }
-    } 
+        */
+        cmd = new SqlCommand(sql, conn)
+        SqlDataReader reader = cmd.ExecuteReader();
+        while (reader.Read())
+        {
+            count += reader["name"].ToString()+"<br />";
+          
+        }
      
   } // end class WebTime
