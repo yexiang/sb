@@ -44,8 +44,10 @@ catch(SqlException ae)
         SqlDataAdapter da = new SqlDataAdapter(sql, conn);  
         DataTable dt = new DataTable();  
         da.Fill(dt);  
-        count = dt.Rows.Count;
-        
+         if (dt.Rows.Count > 0)  
+        {  
+              count = dt.Rows.Count;
+        }
     } 
      
   } // end class WebTime
