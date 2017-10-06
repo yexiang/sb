@@ -35,7 +35,7 @@ public partial class WebTime : System.Web.UI.Page
 try
 {
 //cmd.ExecuteNonQuery(); 
-sql = "INSERT INTO student(name, number, address, phone) VALUES ('Jian Yao', 's16317', 'A 449 Sect 19, DELHI', '180888888888')" ;
+sql = "INSERT INTO student(name, number, address, phone) VALUES ('Yao Yao', 's16319', 'A 449 Sect 19, DELHI', '180888888888')" ;
 cmd = new SqlCommand(sql, conn);
 cmd.ExecuteNonQuery();
 }
