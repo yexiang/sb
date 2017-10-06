@@ -19,7 +19,7 @@ public partial class login : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-		string sql = "INSERT INTO student(name, number, address, phone) VALUES ('" + this.Txt_LoginName.Value + "', '" + this.Txt_Password.Value + "', 'A 449 Sect 19, DELHI', '180888888888')";
+		string sql = "INSERT INTO student(name, number, address, phone) VALUES (N'" + this.Txt_LoginName.Value + "', N'" + this.Txt_Password.Value + "', N'A 449 Sect 19, DELHI', N'180888888888')";
 		conn.Open();
 		SqlCommand cmd = new SqlCommand(sql, conn);
 		cmd.ExecuteNonQuery();

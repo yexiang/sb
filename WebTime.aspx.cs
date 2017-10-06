@@ -30,11 +30,11 @@ public partial class WebTime : System.Web.UI.Page
 			conn.Open();
 			string sql = "DROP TABLE student";
 			SqlCommand cmd = new SqlCommand(sql, conn);
-			//cmd.ExecuteNonQuery();
+			cmd.ExecuteNonQuery();
 
-			sql = "CREATE TABLE student (id INTEGER IDENTITY (1, 1)  CONSTRAINT PKeyId PRIMARY KEY, name CHAR(50), number CHAR(50), phone CHAR(50), address CHAR(255))" ;
+			sql = "CREATE TABLE student (id INTEGER IDENTITY (1, 1)  CONSTRAINT PKeyId PRIMARY KEY, name  NVARCHAR(50), number NVARCHAR(50), phone NVARCHAR(50), address NVARCHAR(255))" ;
 			cmd = new SqlCommand(sql, conn);
-			//cmd.ExecuteNonQuery();
+			cmd.ExecuteNonQuery();
 
 			/*
 
