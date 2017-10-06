@@ -59,7 +59,8 @@ count = ae.Message.ToString();
         while (reader.Read())
         {
             count += reader["name"].ToString()+"\t";
-            count += reader["number"].ToString()+"<br />";
+            count += reader["number"].ToString()+"\t";
+            count += reader["address"].ToString()+"<br />";
           
         }
         count += "</pre>";
